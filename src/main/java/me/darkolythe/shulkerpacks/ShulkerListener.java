@@ -203,7 +203,7 @@ public class ShulkerListener implements Listener {
             Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(main, new Runnable() {
                 @Override
                 public void run() {
-                    if (type == InventoryType.CHEST || type == InventoryType.BARREL || type == InventoryType.FURNACE || type == InventoryType.BLAST_FURNACE || type == InventoryType.BREWING || type == InventoryType.DISPENSER || type == InventoryType.DROPPER || type == InventoryType.SMOKER || type == InventoryType.ENDER_CHEST || type == InventoryType.HOPPER)
+                    if (type == InventoryType.BARREL || type == InventoryType.FURNACE || type == InventoryType.BLAST_FURNACE || type == InventoryType.BREWING || type == InventoryType.DISPENSER || type == InventoryType.DROPPER || type == InventoryType.SMOKER || type == InventoryType.ENDER_CHEST || type == InventoryType.HOPPER)
                         player.openInventory(main.opencontainer.get(player));
                         main.opencontainer.remove(player);
                 }
